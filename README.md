@@ -32,5 +32,5 @@ I come from operations. I think in workflows, not just queries. When I look at a
 
 ---
 
-📍 Chicago, IL  
-🔗 [Portfolio](https://portfolio.thedingwalls.com) · [LinkedIn](https://linkedin.com/in/YOUR-LINKEDIN)
+📍 Indianapolis, IN
+🔗 [Portfolio](https://portfolio.thedingwalls.com) · [LinkedIn](https://www.linkedin.com/in/nick-dingwall-5a83503a/))
