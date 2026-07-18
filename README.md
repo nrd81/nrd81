@@ -1,39 +1,52 @@
-# Hi, I'm Nick
+# Nick Dingwall
 
-**I bring solutions, not tools.** Tip of the spear for my automation & support team: when a problem lands, I pick the right product for it — a Power BI semantic model, a Power Automate flow, a PWA, a bot, or an AI agent — and ship it.
+> Operations manager doing data and automation work inside the world's largest finance and accounting operation. Moving into data analytics full-time. This page is receipts, not adjectives.
 
-## What I do
+---
 
-- **AI & automation delivery** — building AI-assisted workflows, bots, and progressive web apps for an operations organization; the person teams come to when they know *what* they need but not *which* platform gets them there
-- **Fabric-era analytics** — Power BI on Microsoft Fabric: semantic models, DAX, Power Query (M), and Copilot-ready model design; plus Databricks notebooks and Advana on the heavy-data side
-- **Legacy modernization** — retiring decades-old Microsoft Access programs by rebuilding them as governed Power BI solutions — data model first, dashboard second, stakeholder buy-in throughout
-- **Homelab as proof** — a 3-node Proxmox cluster run like production: 20+ services as code, zero-trust ingress, and a working **human-in-the-loop AI ops pattern** where an AI agent proposes infrastructure changes as pull requests I approve from my phone — [homelab-infra](https://github.com/nrd81/homelab-infra)
+## Day Job
 
-## How I work
+**Automation and support.** Point person for automation on my team and branch. When a process is broken, I'm the one who rebuilds it in Power Automate, Power BI, a PWA, or a bot.
 
-Match the problem to the product — don't force the product onto the problem. Operations taught me the rest: diagnose before you fix, verify every change, make it repeatable, write it down. Every homelab incident becomes a runbook; every migration becomes a template.
+**Legacy modernization.** Converting a portfolio of decades-old Microsoft Access programs into governed Power BI semantic models. Data model first, then DAX, then the dashboard.
 
-## Toolbox
+**Operations background.** Managed a 50-person operations team before pivoting technical. That's why my builds get adopted: I was the stakeholder for years before I was the builder.
 
-![Power BI](https://img.shields.io/badge/Power_BI_on_Fabric-F2C811?logo=powerbi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
-![DAX](https://img.shields.io/badge/DAX_%2F_M-F2C811?logoColor=black)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white)
-![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?logoColor=white)
-![Power Apps](https://img.shields.io/badge/Power_Apps_%2F_PWAs-742774?logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![AI Agents](https://img.shields.io/badge/AI_agents_%2F_Copilot-8A2BE2?logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?logo=proxmox&logoColor=white)
+| Layer | Tools |
+|-------|-------|
+| Analytics and BI | Power BI on Fabric, DAX, Power Query (M), SQL |
+| Big data | Databricks notebooks, Advana, Qlik |
+| Automation | Power Automate, PWAs, bots |
+| Under the hood | Python, Postgres, Git, Linux, Docker |
 
-Also fluent in: Advana, Qlik, Linux, Git — and the legacy Access/Excel estates most orgs are still standing on.
+---
 
-## Featured
+## Homelab
 
-| Repo | What it shows |
-|------|---------------|
-| [homelab-infra](https://github.com/nrd81/homelab-infra) | Infrastructure as Code: zero-trust networking, ZFS data integrity, incident-driven runbooks |
-| homelab-operator *(private — write-up coming)* | Human-in-the-loop GitOps: AI proposes via PR, human approves from mobile, deterministic apply |
-| fantasy-warehouse *(private — write-up coming)* | End-to-end pipeline: API ingest → Postgres star schema → SQL analytics → dashboard |
+Where I prove things work before I trust them. Everything below is running today, in a 3-node Proxmox cluster I operate like production.
 
-Contact: dingwall1@gmail.com
+| What happened | Why it matters |
+|---------------|----------------|
+| **Human-in-the-loop AI ops.** An AI agent proposes infrastructure changes as pull requests. I approve from my phone. A deterministic script applies them. The AI never touches infrastructure directly. | The governance problem every org adopting AI agents has, solved small. |
+| **Infrastructure as code.** 20+ services in one compose file, zero open firewall ports, Cloudflare Tunnel with zero-trust policies per service. | The whole stack rebuilds from a git repo. |
+| **Data integrity, tested.** A ZFS scrub surfaced 15 permanent errors from silent corruption. Traced to 7 files, quarantined, re-acquired, zero library impact. | Backups you haven't tested are a hypothesis. |
+| **Disaster recovery, drilled.** UPS with scripted clean shutdown and BIOS restore-on-AC. Then I pulled the plug on purpose and watched it self-recover unattended. | The first drill failed because I pulled the data cable instead of power. Found that in a drill, not an outage. |
+| **Data warehouse, shipped.** [fantasy-warehouse](https://github.com/nrd81/fantasy-warehouse): seven data feeds into a Postgres star schema, SQL edge views, and a 9-page Power BI report. Cron refresh, nightly backups, dead-man monitoring. | A full BI pipeline built and operated solo: ingest, model, transform, visualize, monitor. Same discipline as the day-job migrations, end to end on my own iron. |
+
+**Repos:** [fantasy-warehouse](https://github.com/nrd81/fantasy-warehouse) (public) | [homelab-infra](https://github.com/nrd81/homelab-infra) (public) | homelab-operator (private, write-up coming)
+
+---
+
+## How I Decide
+
+Match the problem to the product, not the product to the problem.
+
+- An Access database that three people use doesn't need Databricks.
+- A 50-step approval chain doesn't need a dashboard, it needs a flow.
+- Diagnose before fixing. Verify every change. Write it down.
+
+---
+
+## Contact
+
+**dingwall1@gmail.com**
